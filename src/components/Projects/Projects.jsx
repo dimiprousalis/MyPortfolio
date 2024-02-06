@@ -26,13 +26,11 @@ const squareVariants = {
     opacity: 1,
     scale: 1,
     transition: {
-      duration: 0.4,
       ease: [0, 1, 0, 0],
       scale: {
         type: 'spring',
-        damping: 7,
-        stiffness: 70,
-        restDelta: 0.001,
+        stiffness: 150,
+        // restDelta: 0.001,
       },
     },
   },

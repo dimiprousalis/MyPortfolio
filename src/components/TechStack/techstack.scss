@@ -10,17 +10,13 @@
     margin: auto;
     margin-top: 200px;
 
-
-
     @include tablet {
         width: 80%;
     }
     @include mobile {
         width: 90%;
-        margin-top: 180px;
+        margin-top: 120px;
     }
-    
-
 
     .diag-title {
         color: white;
@@ -47,7 +43,6 @@
             width: 90%;
         }
     
-
         .item-container {
             display: flex;
             justify-content: space-around;
@@ -56,7 +51,7 @@
             background-color: #c4fdf688;
             box-shadow: rgb(8, 8, 8) 0px 20px 30px -10px;
             border-radius: 20px;
-            border: 3px dashed black;
+            border: 2px dashed black;
             @include mobile {
                 padding: 0 30px;
                 height: 125px;
@@ -79,6 +74,7 @@
                 font-size: 18px;
                 border-radius: 100px;
                 text-align: center;
+
                 @include mobile {
                     width: 30px;
                     height: 30px;

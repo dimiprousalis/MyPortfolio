@@ -9,10 +9,11 @@
     margin: auto;
     margin-top: 200px;
     border: 2px solid black;
+    padding-bottom: 50px;
 
     @include tablet {
         width: 90%;
-        margin-top: 180px;
+        margin-top: 120px;
     }
 }
 
@@ -20,7 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
+    padding: 0 50px;
     gap: 50px;
 }
 
@@ -36,7 +37,6 @@
     @include tablet {
         padding: 0;
         flex-direction: column-reverse;
-
     }
 }
 
@@ -49,7 +49,6 @@
 
     @include tablet {
         padding: 30px;
-
     }
 
 }
@@ -74,7 +73,6 @@
     border-top: 1px solid black;
 
     @include mobile {
-
         svg {
             width: 10px;
         }
@@ -95,10 +93,7 @@
         font-size: 8px;
         width: 90%;
         height: 5%;
-
     }
-
-
 }
 
 .box-3 {
@@ -187,15 +182,24 @@
         color: $darkPink;
         text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
         padding-top: 5%;
+        @include mobile {
+            font-size: 38px;
+        }
     }
 
     .desc {
         font-weight: bold;
+        @include mobile {
+            font-size: 15px;
+        }
     }
 
     .stack {
         font-size: 16px;
         font-weight: bold;
+        @include mobile {
+            font-size: 12px;
+        }
     }
 
     .site-links {
@@ -218,7 +222,10 @@
             &:hover {
                 background-color: $lightPurple;
             }
+            @include mobile {
+                font-size: 12px;
+                width: 25%;
+            }
         }
-
     }
 }

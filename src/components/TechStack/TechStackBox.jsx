@@ -1,8 +1,41 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './techstack.scss';
-import { motion } from 'framer-motion';
+import { useAnimation, motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
+const useTechAnimation = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    } else {
+      controls.start('hidden');
+    }
+  }, [controls, inView]);
+
+  return [ref, controls];
+};
+
+const squareVariants = {
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      scale: {
+        type: 'fade',
+        duration: 1,
+      },
+    },
+  },
+  hidden: { opacity: 0, scale: 0 },
+};
 
 const TechStackBox = (props) => {
+
+  const [ref, controls] = useTechAnimation();
+
   const sections = {
     languages: [
       { name: 'JavaScript', icon: 'javascript' },
@@ -37,14 +70,16 @@ const TechStackBox = (props) => {
       <div className="diag-title">{props.title}</div>
       <div className="item-container">
         {sections[props.section].map((item, index) => (
-          <motion.div
-            key={index}
-            className="tech-item"
-            animate={{ x: [-20, 20, -20], transition: { repeat: Infinity, duration: 5 } }}
-          >
+         
+             <motion.div 
+             className="tech-item" 
+             key={item.name} 
+             ref={ref} animate={controls} initial="hidden" variants={squareVariants} 
+             >
             <img src={require(`../../assets/icons/${item.icon}.png`)} alt={item.name} />
             <span>{item.name}</span>
-          </motion.div>
+            </motion.div>
+         
         ))}
       </div>
     </div>
