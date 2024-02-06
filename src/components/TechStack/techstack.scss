@@ -1,0 +1,113 @@
+@import '../../variables.scss';
+@import '../../app.scss';
+
+#tech-stack {
+    background-image: url('../.././assets/pink-clouds.jpg');
+    width: 70%;
+    background-size: cover;
+    border: 2px solid black;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin: auto;
+    margin-top: 200px;
+
+
+
+    @include tablet {
+        width: 80%;
+    }
+    @include mobile {
+        width: 90%;
+        margin-top: 180px;
+    }
+    
+
+
+    .diag-title {
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        transform: rotate(-30deg);
+        position: absolute;
+        margin-left: -60px;
+        margin-top: -10px;
+        background-color: $lightPurple;
+        padding: 8px;
+        border: 1px dashed black;
+
+        @include mobile {
+           font-size: 20px;
+           margin-left: -30px;
+        }
+    }
+
+    .tech-container {
+        width: 70%;
+        @include tablet {
+            width: 90%;
+        }
+    
+
+        .item-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 150px;
+            background-color: #c4fdf688;
+            box-shadow: rgb(8, 8, 8) 0px 20px 30px -10px;
+            border-radius: 20px;
+            border: 3px dashed black;
+            @include mobile {
+                padding: 0 30px;
+                height: 125px;
+            
+            }
+
+            .tech-item {
+                background-color: white;
+                border: 2px dashed black;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+                color: $darkPink;
+                text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                font-weight: bold;
+                font-size: 18px;
+                border-radius: 100px;
+                text-align: center;
+                @include mobile {
+                    width: 30px;
+                    height: 30px;
+                    padding: 10px;
+                    font-size: 12px;
+                    gap: 15px;
+                    margin: 0 2px;
+                
+                }
+
+                img {
+                    width: 50px;
+                    @include mobile {
+                        width: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .tech-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 40px;
+        @include mobile {
+            margin-top: 20px;
+        }
+
+    }
+}

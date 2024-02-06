@@ -1,0 +1,78 @@
+@import '../../variables.scss';
+@import '../../app.scss';
+
+#home {
+    display: flex;
+    background-image: url('../.././assets/pink-clouds.jpg');
+    background-size: cover;
+    justify-content: center;
+    padding: 10px;
+    gap: 50px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin: auto;
+    margin-top: 100px;
+    border: 2px solid black;
+    padding-bottom: 20px;
+
+
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+    }
+
+    .typing-container {
+        width: 600px;
+        height: 450px;
+
+        @include tablet {
+            width: 300px;
+            height: 150px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 80px;
+            margin: 40px 0 20px 0;
+            text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+            @include tablet {
+                font-size: 40px;
+                margin: 0;
+            }
+        }
+
+        .fade-text {
+            color: rgb(204, 198, 198);
+            font-size: 45px;
+            text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+            @include tablet {
+                font-size: 35px;
+            }
+
+            @include tablet {
+                font-size: 25px;
+            }
+
+            &.fade-in {
+                transition: opacity 1.5s ease;
+            }
+            &.fade-out {
+                opacity: 0;
+                transition: opacity 1.5s ease;
+            }
+        }
+    }
+
+    .about-pic {
+        max-width: 400px;
+        border-radius: 50px;
+        border: 20px solid white;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+        @include tablet {
+            width: 70%;
+        }
+    }
+}

@@ -1,0 +1,225 @@
+@import '../../variables.scss';
+@import '../../app.scss';
+
+
+#projects {
+    width: 70%;
+    background-image: url('../.././assets/pink-clouds.jpg');
+    background-size: cover;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin: auto;
+    margin-top: 200px;
+    border: 2px solid black;
+
+    @include tablet {
+        width: 90%;
+        margin-top: 180px;
+    }
+}
+
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+}
+
+.projects-container {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 10px 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border: 3px dashed black;
+
+    @include tablet {
+        padding: 0;
+        flex-direction: column-reverse;
+
+    }
+}
+
+
+//---------------Website--------------//
+.box-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 5px;
+
+    @include tablet {
+        padding: 30px;
+
+    }
+
+}
+
+.box-1 {
+    width: 30%;
+    height: 20px;
+    border-top-left-radius: 80px 80px;
+    border-top-right-radius: 80px 80px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.box-2 {
+    display: flex;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+
+    @include mobile {
+
+        svg {
+            width: 10px;
+        }
+    }
+}
+
+.link-bar {
+    background-color: white;
+    width: 70%;
+    padding-left: 4px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+
+    @include mobile {
+        font-size: 8px;
+        width: 90%;
+        height: 5%;
+
+    }
+
+
+}
+
+.box-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.website-pic {
+    width: 400px;
+    height: auto;
+    padding: 20px;
+
+    @include tablet {
+        width: 90%;
+        height: auto;
+        padding: 15px 0;
+    }
+}
+
+.purple {
+
+    .box-1,
+    .box-2 {
+        background-color: $darkPurple;
+    }
+
+    .box-3 {
+        background-color: $lightPurple;
+    }
+}
+
+.mint {
+
+    .box-1,
+    .box-2 {
+        background-color: $darkMint;
+    }
+
+    .box-3 {
+        background-color: $lightMint;
+    }
+}
+
+.blue {
+
+    .box-1,
+    .box-2 {
+        background-color: $darkBlue;
+    }
+
+    .box-3 {
+        background-color: $lightBlue;
+    }
+}
+
+//---------------DESCRIPTION--------------//
+.description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5px;
+    max-width: 410px;
+
+    @include tablet {
+        svg {
+            height: 80px;
+        }
+    }
+
+}
+
+.text-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: $darkGrey;
+    text-align: center;
+
+    .title {
+        font-size: 40px;
+        font-weight: bold;
+        color: $darkPink;
+        text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        padding-top: 5%;
+    }
+
+    .desc {
+        font-weight: bold;
+    }
+
+    .stack {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .site-links {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            background-color: #fbd4d4;
+            font-weight: bold;
+            width: 30%;
+            text-align: center;
+            padding: 10px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: $darkGrey;
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+            &:hover {
+                background-color: $lightPurple;
+            }
+        }
+
+    }
+}
