@@ -21,6 +21,7 @@
 .spacer {
     height: 40px;
 }
+
 .comp-pic {
     position: absolute;
     max-width: 900px;
@@ -45,6 +46,10 @@ form {
     gap: 10px;
     padding-right: 10px;
 
+    @include tablet {
+        gap: 5px;
+    }
+
     input,
     textarea {
         padding: 9px;
@@ -52,6 +57,10 @@ form {
         border: 1px solid black;
         color: black;
         border-radius: 10px;
+
+        @include tablet {
+            padding: 5px;
+        }
     }
 
     button {
