@@ -36,7 +36,7 @@ const squareVariants = {
       },
     },
   },
-  hidden: { opacity: 1, scale: 1 },
+  hidden: { opacity: 0, scale: .7 },
 };
 
 const ProjectItem = ({ project }) => {
