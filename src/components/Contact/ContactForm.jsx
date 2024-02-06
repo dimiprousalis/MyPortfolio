@@ -31,8 +31,7 @@ const ContactForm = () => {
     return (
         <div className="contact-container">
             <div className="spacer"></div>
-            <img className="comp-pic" src={require('../../assets/old-comp-5.png')} alt="comp" />
-            <div className="form-box">
+            <img className="comp-pic" src={require('../../assets/old-comp-6.png')} alt="comp" />
             <motion.form
                 ref={formRef}
                 onSubmit={sendEmail}
@@ -46,7 +45,6 @@ const ContactForm = () => {
                 {error && "Sorry, looks like that didn't work. Let's try again!"}
                 {success && "Thank you! I'll be reaching out shortly."}
             </motion.form>
-            </div>
         </div>
     )
 }

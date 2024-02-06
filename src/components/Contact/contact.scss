@@ -27,40 +27,24 @@
     max-height: 900px;
     width: 70%;
     height: 60%;
-    margin-top: -45px;
+    margin-top: -40px;
 
     @include tablet {
         width: 90%;
     }
 }
 
-.form-box {
-    background-color: #f2b1d4;
-    position: relative;
-    width: 58%;
-    height: 27vh;
-    margin: auto;
-    padding-right: 10px;
-    border-radius: 10px;
-
-    @include tablet {
-        width: 56%;
-    }
-  
-}
 form {
     position: relative;
-    width: 100%;
+    width: 58%;
     height: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
     max-width: 900px;
     gap: 10px;
+    padding-right: 10px;
 
-    @include tablet {
-        gap: 5px;
-    }
     input,
     textarea {
         padding: 9px;
