@@ -1,8 +1,10 @@
 import React from 'react'
+import DiamondIcon from '@mui/icons-material/Diamond';
 
 const Description = (props) => {
     return (
         <div className="description-container">
+            <DiamondIcon />
             <div className="text-box">
                 <div className="title">{props.title}</div>
                 <div className="desc">{props.description}</div>

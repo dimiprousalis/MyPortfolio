@@ -27,7 +27,6 @@
 
 .projects-container {
     display: flex;
-    align-items: center;
     background-color: rgb(255, 255, 255);
     border-radius: 50px;
     padding: 10px 30px;
@@ -74,7 +73,7 @@
 
     @include mobile {
         svg {
-            width: 10px;
+            font-size: 15px;
         }
     }
 }
@@ -155,16 +154,28 @@
 .description-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 5px;
-    max-width: 410px;
+    width: 100%;
+    height: 90%;
+
+    svg {
+        color: $darkPink;
+        font-size: 70px;
+        align-self: flex-end;
+    }
 
     @include tablet {
         svg {
-            height: 80px;
+            padding-right: 25px;
         }
     }
 
+    @include mobile {
+        svg {
+            font-size: 50px;
+        }
+    }
 }
 
 .text-box {
@@ -175,13 +186,15 @@
     gap: 20px;
     color: $darkGrey;
     text-align: center;
+    max-width: 410px;
+    align-self: center;
 
     .title {
         font-size: 40px;
         font-weight: bold;
         color: $darkPink;
         text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-        padding-top: 5%;
+
         @include mobile {
             font-size: 38px;
         }
@@ -189,6 +202,7 @@
 
     .desc {
         font-weight: bold;
+
         @include mobile {
             font-size: 15px;
         }
@@ -197,6 +211,7 @@
     .stack {
         font-size: 16px;
         font-weight: bold;
+
         @include mobile {
             font-size: 12px;
         }
@@ -222,6 +237,7 @@
             &:hover {
                 background-color: $lightPurple;
             }
+
             @include mobile {
                 font-size: 12px;
                 width: 25%;

@@ -1,77 +1,186 @@
 @import '../../variables.scss';
 @import '../../App.scss';
 
-
 #contact {
     background-image: url('../.././assets/pink-clouds.jpg');
     background-size: cover;
     width: 70%;
-    height: 80vh;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     margin: auto;
     margin-top: 200px;
     border: 2px solid black;
-    max-width: 900px;
+    padding-bottom: 40px;
 
     @include tablet {
         width: 90%;
+        margin-top: 120px;
     }
 }
 
-.spacer {
-    height: 40px;
-}
-
-.comp-pic {
-    position: absolute;
-    max-width: 900px;
-    max-height: 900px;
+.screen {
+    background-color: #ee9bc7;
     width: 70%;
-    height: 60%;
-    margin-top: -40px;
+    height: 450px;
+    max-width: 750px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid black;
 
-    @include tablet {
-        width: 90%;
+    @include mobile {
+        height: 300px;
+        width: 80%;
     }
 }
 
 form {
-    position: relative;
-    width: 58%;
-    height: 100%;
+    background-color: #f2b1d4;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 85%;
+    height: 80%;
     margin: auto;
     display: flex;
+    align-items: center;
     flex-direction: column;
+    justify-content: center;
     max-width: 900px;
-    gap: 10px;
-    padding-right: 10px;
+    gap: 2%;
+    padding: 3% 2%;
 
-    @include tablet {
-        gap: 5px;
+    @include mobile {
+        gap: 3%;
+        padding: 3%;
     }
 
     input,
     textarea {
-        padding: 9px;
+        padding: 2%;
         background-color: white;
         border: 1px solid black;
         color: black;
         border-radius: 10px;
+        width: 90%;
 
         @include tablet {
-            padding: 5px;
+            padding: 8px;
         }
     }
 
+    input {
+        height: 4%;
+    }
+
+    textarea {
+        height: 70%;
+    }
+
     button {
-        padding: 2px;
         border: 2px dashed black;
         border-radius: 20px;
         background-color: $lightBlue;
         cursor: pointer;
         color: white;
         text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-        font-size: 15px;
+        font-size: 25px;
         font-weight: bolder;
+        width: 70%;
+        margin: auto;
+
+        @include tablet {
+            font-size: 20px;
+        }
+
+        @include mobile {
+            font-size: 15px;
+        }
     }
+}
+
+.comp-body {
+    background-color: #ee9bc7;
+    width: 80%;
+    height: 150px;
+    margin: auto;
+    max-width: 800px;
+    border-radius: 10px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+
+    @include mobile {
+        height: 90px;
+        width: 90%;
+    }
+
+    .bar {
+        background-color: #a65781;
+        width: 56%;
+        height: 20px;
+        padding: 0 10%;
+        border: 1px solid black;
+        border-radius: 2px;
+        margin-top: -2%;
+
+        @include mobile {
+            height: 15px;
+        }
+
+    }
+
+    .nob {
+        width: 40px;
+        height: 40px;
+        background-color: #a65781;
+        border-radius: 100%;
+        align-self: flex-start;
+        margin-left: 20px;
+        border: 1px solid black;
+
+        @include mobile {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .disk {
+        background-color: #a65781;
+        width: 35%;
+        height: 20px;
+        border: 1px solid black;
+        margin-left: 35%;
+        border-radius: 10px;
+
+        @include mobile {
+            height: 12px;
+        }
+
+    }
+}
+
+.keyboard {
+    transform: rotate(2deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+
+    img {
+        background-color: #f19ec2;
+        padding: 10px;
+        width: 65%;
+        max-height: 180px;
+        max-width: 650px;
+        border-radius: 5px;
+        border: 2px solid black;
+
+        @include mobile {
+            width: 75%;
+        }
+    }
+
 }

@@ -28,20 +28,28 @@ const ContactForm = () => {
             );
     };
     return (
-        <div className="contact-container">
-            <div className="spacer"></div>
-            <img className="comp-pic" src={require('../../assets/old-comp-6.png')} alt="comp" />
-            <form
-                ref={formRef}
-                onSubmit={sendEmail}>
-                <input type="text" required placeholder="Name" name="name" />
-                <input type="email" required placeholder="Email" name="email" />
-                <textarea rows={8} placeholder="Message" name="message" />
-                <button>Send</button>
-                {error && alert("Sorry, looks like that didn't work. Let's try again!")}
-                {success && alert("Thank you! I'll be reaching out shortly.")}
-            </form>
-        </div>
+        <>
+            <div className="screen">
+                <form
+                    ref={formRef}
+                    onSubmit={sendEmail}>
+                    <input type="text" required placeholder="Name" name="name" />
+                    <input type="email" required placeholder="Email" name="email" />
+                    <textarea rows={9} placeholder="Message" name="message" />
+                    <button>Send</button>
+                    {error && alert("Sorry, looks like that didn't work. Let's try again!")}
+                    {success && alert("Thank you! I'll be reaching out shortly.")}
+                </form>
+            </div>
+            <div className="comp-body">
+                <div className="nob"></div>
+                <div className="bar"></div>
+                <div className="disk"></div>
+            </div>
+            <div className="keyboard">
+                <img className="comp-pic" src={require('../../assets/keyboard.png')} alt="comp" />
+            </div>
+        </>
     )
 }
 
