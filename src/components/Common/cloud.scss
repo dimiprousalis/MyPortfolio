@@ -19,10 +19,7 @@
   display: block;
   width: 100%;
   height: auto;
-  @include mobile {
-    // width: 100px;
 
-  }
 }
 .cloud-text {
   position: absolute;
@@ -31,7 +28,13 @@
   transform: translate(-50%, -50%); 
   color: $darkPink;
   text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-size: 35px; 
+  font-size: 50px; 
   font-weight: bold;
   text-align: center;
+  font-family: 'Marck Script', cursive;
+  width: 90%;
+  @include mobile {
+    font-size: 40px; 
+
+  }
 }

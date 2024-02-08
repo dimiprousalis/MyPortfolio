@@ -24,20 +24,26 @@
     @include tablet {
         flex-direction: column;
         align-items: center;
-        padding: 50px 0;
+        padding: 20px 0;
         width: 95%;
+    }
+
+    @include mobile {
+      gap:80px
     }
 
     .typing-container {
         width: 600px;
         height: 450px;
+        font-weight: 800;
+        -webkit-text-stroke: 1px black;
 
         @include tablet {
             width: 450px;
             height: 150px;
         }
         @include mobile {
-            width: 300px;
+            width: 350px;
             height: 150px;
         }
 
@@ -45,15 +51,13 @@
             color: white;
             font-size: 80px;
             margin: 40px 0 20px 0;
-            text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
             @include tablet {
                 font-size: 60px;
                 margin: 0;
             }
             @include mobile{
-                font-size: 40px;
-               
+                font-size: 50px;
             }
         }
 
@@ -66,8 +70,8 @@
                 font-size: 35px;
             }
 
-            @include tablet {
-                font-size: 25px;
+            @include mobile {
+                font-size: 30px;
             }
 
             &.fade-in {
