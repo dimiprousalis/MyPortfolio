@@ -30,7 +30,6 @@ const squareVariants = {
       scale: {
         type: 'spring',
         stiffness: 150,
-        // restDelta: 0.001,
       },
     },
   },

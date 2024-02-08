@@ -25,6 +25,7 @@ function Navbar() {
             </div>
             <nav ref={navRef}>
                 <a href="#home">Home</a>
+                <a href="#about">About Me</a>
                 <a href="#tech-stack">Tech Stack</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>

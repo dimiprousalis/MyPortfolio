@@ -70,7 +70,6 @@ const TechStackBox = (props) => {
       <div className="diag-title">{props.title}</div>
       <div className="item-container">
         {sections[props.section].map((item, index) => (
-         
              <motion.div 
              className="tech-item" 
              key={item.name} 

@@ -1,79 +1,124 @@
 @import '../../variables.scss';
 @import '../../App.scss';
 
-#home {
-    display: flex;
+@keyframes scale {
+    50% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#about {
+    width: 90%;
     background-image: url('../.././assets/pink-clouds.jpg');
     background-size: cover;
-    justify-content: center;
-    padding: 10px;
-    gap: 50px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 150px;
     border: 2px solid black;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 
+    @include mobile {
+        margin-top: 120px;
+    }
+}
+
+.bio-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 
     @include tablet {
         flex-direction: column;
         align-items: center;
-        padding: 50px 0;
-        width: 95%;
+    }
+}
+
+
+.bio {
+    background: linear-gradient($lightPurple, white);
+    padding: 30px;
+    border-radius: 30px;
+    margin-top: -30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    text-align: center;
+    font-size: 18px;
+    border: 1px dashed black;
+    height: 210px;
+    width: 210px;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+        width: 70%;
+        height: 180px;
     }
 
-    .typing-container {
-        width: 600px;
-        height: 450px;
+    @include mobile {
+        width: 60%;
+    }
+
+    .header {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        line-height: 27px;
+    }
+
+    h2 {
+        font-size: 25px;
+        color: white;
+        margin: 0;
+        text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-weight: 800;
+      
+    }
+
+    p {
+        visibility: collapse;
+        margin: 8px;
+    }
+
+    .main-icon {
+        color: white;
+        font-size: 90px;
 
         @include tablet {
-            width: 300px;
-            height: 150px;
+            font-size: 110px;
         }
-
-        h1 {
-            color: white;
-            font-size: 80px;
-            margin: 40px 0 20px 0;
-            text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-
-            @include tablet {
-                font-size: 40px;
-                margin: 0;
-            }
-        }
-
-        .fade-text {
-            color: rgb(204, 198, 198);
-            font-size: 45px;
-            text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-
-            @include tablet {
-                font-size: 35px;
-            }
-
-            @include tablet {
-                font-size: 25px;
-            }
-
-            &.fade-in {
-                transition: opacity 1.5s ease;
-            }
-            &.fade-out {
-                opacity: 0;
-                transition: opacity 1.5s ease;
-            }
+        @include mobile {
+            font-size: 100px;
         }
     }
 
-    .about-pic {
-        max-width: 400px;
-        border-radius: 50px;
-        border: 20px solid white;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
 
-        @include tablet {
-            width: 70%;
-        }
+.animate {
+    color: rgb(101, 94, 160);
+    animation: scale 1.7s infinite;
+}
+
+.flipped {
+    min-height: 450px;
+    height: 100%;
+
+    @include tablet {
+        min-height: 0;
+        height: 60%;
+    }
+
+    p {
+        visibility: visible;
+    }
+
+    .animate {
+        visibility: collapse;
+        height: 20px;
     }
 }

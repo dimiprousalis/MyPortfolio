@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-const fadeInterval = 850
+const fadeInterval = 1100
 const wordChangeInterval = fadeInterval * 2
 const wordsChanged = ['A Full Stack Software Engineer...', 'A Perpetual Learner...', "A Person That's Really Good at Making Detroit Pizza..."]
 
