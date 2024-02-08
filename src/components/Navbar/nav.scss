@@ -1,13 +1,6 @@
 @import '../../variables.scss';
 @import '../../App.scss';
 
-:target:before {
-    content: "";
-    display: block;
-    height: 85px;
-    margin: 150px 0 0;
-}
-
 .logo {
     color: $darkPink;
     font-weight: bolder;

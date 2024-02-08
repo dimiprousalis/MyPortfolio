@@ -8,7 +8,7 @@ const aboutData = [
     {
         id: 1,
         title: "I'm a self-taught software engineer",
-        desc1: "I appreciate all things logic, brain teasers, and puzzles.", 
+        desc1: "I appreciate all things logic, brain teasers, and puzzles.",
         desc2: "I began teaching myself how to code and immediately fell in love... So much so that I left my previous career to pursue programming full time.",
         icon: "ComputerIcon",
     },
@@ -40,11 +40,14 @@ const About = () => {
     const aboutComponents = aboutData.map((about) => <AboutCard key={about.id} title={about.title} desc1={about.desc1} desc2={about.desc2} icon={about.icon} />);
 
     return (
-        <div id="about">
-            <Cloud text="About Me" />
-            <div className="bio-container">
-                {aboutComponents}</div>
-        </div>
+        <>
+            <div id="about-nav"></div>
+            <div id="about">
+                <Cloud text="About Me" />
+                <div className="bio-container">
+                    {aboutComponents}</div>
+            </div>
+        </>
     );
 };
 export default About

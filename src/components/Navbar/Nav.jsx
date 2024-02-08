@@ -24,11 +24,11 @@ function Navbar() {
 
             </div>
             <nav ref={navRef}>
-                <a href="#home">Home</a>
-                <a href="#about">About Me</a>
-                <a href="#tech-stack">Tech Stack</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <a href="#home-nav">Home</a>
+                <a href="#about-nav">About Me</a>
+                <a href="#tech-nav">Tech Stack</a>
+                <a href="#projects-nav">Projects</a>
+                <a href="#contact-nav">Contact</a>
             </nav>
             <div className="nav-btn">
                 <MenuIcon

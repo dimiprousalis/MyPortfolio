@@ -48,7 +48,7 @@ const ProjectItem = ({ project }) => {
           linkTxt={project.linkTxt}
           color={project.color}
         />
-        <Description title={project.title} description={project.description} stack={project.stack} demo={project.demo} github={project.github}/>
+        <Description title={project.title} description={project.description} stack={project.stack} demo={project.demo} github={project.github} />
       </div>
     </motion.div>
   );
@@ -76,8 +76,8 @@ const projectsData = [
     color: 'mint',
     description: 'AI Chatbot that answers any of your accounting questions',
     stack: 'Tech Stack: JavaScript, Next.js',
-    demo:'https://cpa-i.up.railway.app/',
-    github:'https://github.com/dimiprousalis/CPA-i'
+    demo: 'https://cpa-i.up.railway.app/',
+    github: 'https://github.com/dimiprousalis/CPA-i'
   },
   {
     id: 3,
@@ -88,8 +88,8 @@ const projectsData = [
     color: 'blue',
     description: 'A fullstack web application to help you keep track of who owes you money',
     stack: 'Tech Stack: JavaScript, EJS, MongoDB',
-    demo:'https://gooddimes.cyclic.cloud/',
-    github:'https://github.com/dimiprousalis/GoodDimes'
+    demo: 'https://gooddimes.cyclic.cloud/',
+    github: 'https://github.com/dimiprousalis/GoodDimes'
   },
 ];
 
@@ -97,10 +97,13 @@ const Projects = () => {
   const projectComponents = projectsData.map((project) => <ProjectItem key={project.id} project={project} />);
 
   return (
-    <div id="projects">
-      <Cloud text="Projects" />
-      <div className="projects-section">{projectComponents}</div>
-    </div>
+    <>
+      <div id="projects-nav"></div>
+      <div id="projects">
+        <Cloud text="Projects" />
+        <div className="projects-section">{projectComponents}</div>
+      </div>
+    </>
   );
 };
 
