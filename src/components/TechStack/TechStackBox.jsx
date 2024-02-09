@@ -76,7 +76,7 @@ const TechStackBox = (props) => {
              ref={ref} animate={controls} initial="hidden" variants={squareVariants} 
              >
             <img src={require(`../../assets/icons/${item.icon}.png`)} alt={item.name} />
-            <span>{item.name}</span>
+            <p>{item.name}</p>
             </motion.div>
          
         ))}

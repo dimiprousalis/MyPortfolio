@@ -69,7 +69,7 @@ const projectsData = [
   },
   {
     id: 2,
-    title: 'CPA-I',
+    title: 'CPA - i',
     cartoonImage: require('../../assets/projects/cpai.png'),
     realImage: require('../../assets/projects/cpai-real.png'),
     linkTxt: 'https://cpa-i.up.railway.app/',

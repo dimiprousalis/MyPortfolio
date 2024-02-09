@@ -7,7 +7,7 @@ const Contact = () => {
         <>
             <div id="contact-nav"></div>
             <div id='contact'>
-                <Cloud text="Contact" />
+                <Cloud text="Contact Me" />
                 <ContactForm />
             </div>
         </>
