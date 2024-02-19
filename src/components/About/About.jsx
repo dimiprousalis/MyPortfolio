@@ -28,7 +28,7 @@ const aboutData = [
     },
     {
         id: 4,
-        title: "I love pizza and bourbon",
+        title: "I really love pizza and bourbon",
         desc1: "This doesn't have much to do with anything but I'm really passionate about pizza and bourbon...",
         desc2: "I make an amazing Detroit style pizza and have way too many batches of Bookers in my bourbon collection.",
         icon: "LocalPizzaIcon",

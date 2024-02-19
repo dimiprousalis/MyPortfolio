@@ -44,8 +44,8 @@
             height: 150px;
         }
         @include mobile {
-            width: 350px;
-            height: 150px;
+            width: 80vw;
+            height: 20vh;
         }
 
         h1 {
@@ -58,21 +58,20 @@
                 margin: 0;
             }
             @include mobile{
-                font-size: 50px;
+                font-size: 12vw;
             }
         }
 
         .fade-text {
             color: rgb(204, 198, 198);
             font-size: 45px;
-            text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
             @include tablet {
                 font-size: 35px;
             }
 
             @include mobile {
-                font-size: 30px;
+                font-size: 6vw;
             }
 
             &.fade-in {

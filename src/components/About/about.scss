@@ -62,11 +62,11 @@
 
     @include tablet {
         width: 70%;
-        height: 180px;
+        height: 200px;
     }
 
     @include mobile {
-        width: 60%;
+        width: 65%;
     }
 
     .header {
@@ -80,11 +80,13 @@
 
     h2 {
         font-size: 25px;
-        color: rgb(204, 198, 198);
+        color: $lightGrey;
         margin: 0;
-        font-family: 'Marck Script', cursive;
-        text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-        // font-weight: 800;
+        font-weight: 800;
+
+        @include mobile {
+            font-size: 18px;
+        }
     }
 
     p {

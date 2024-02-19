@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import './nav.scss';
 import MenuIcon from '@mui/icons-material/Menu';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -12,6 +12,22 @@ function Navbar() {
             "responsive_nav"
         );
     };
+
+    //collapse mobile navbar when user scrolls
+    useEffect(() => {
+        const handleScroll = () => {
+            const shouldCollapse = window.scrollY > 0;
+            if (shouldCollapse) {
+                navRef.current.classList.remove("responsive_nav");
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     return (
         <div className="nav-container">
@@ -33,7 +49,8 @@ function Navbar() {
             <div className="nav-btn">
                 <MenuIcon
                     sx={{ fontSize: 40 }}
-                    onClick={showNavbar} />
+                    onClick={showNavbar}
+                     />
             </div>
         </div >
     );
