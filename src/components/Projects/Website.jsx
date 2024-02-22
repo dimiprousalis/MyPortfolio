@@ -18,9 +18,7 @@ const Website = (props) => {
 
             </div>
             <div className={`box-3 ${props.color}`}>
-                <img className="website-pic" src={props.cartoonImage} alt="taste buds"
-                    onMouseOver={e => (e.currentTarget.src = props.realImage)}
-                    onMouseOut={e => (e.currentTarget.src = props.cartoonImage)} />
+                <img className="website-pic" src={props.cartoonImage} alt="taste buds" />
             </div>
         </div>
     )

@@ -10,3 +10,20 @@ $lightPink: #F8EAEA;
 $darkPink: #fbd4d4;
 $lightYellow: #fffec2;
 
+@mixin mobile {
+    @media (max-width: 500px) {
+      @content;
+    }
+  }
+  
+  @mixin tablet {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media (max-width: 1366px) {
+      @content;
+    }
+  }
