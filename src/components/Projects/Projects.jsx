@@ -58,7 +58,7 @@ const projectsData = [
   {
     id: 1,
     title: 'Taste Buds',
-    cartoonImage: "https://res.cloudinary.com/dwkg9jctn/image/upload/v1708624744/my-portfolio/taste-buds_l8sfre.png",
+    cartoonImage: "https://res.cloudinary.com/dwkg9jctn/image/upload/v1708627022/Portfolio/taste-buds_l8sfre_c_pad_w_400_jucedl.png",
     realImage: "https://res.cloudinary.com/dwkg9jctn/image/upload/v1708624749/my-portfolio/taste-buds-real_ivetma.png",
     linkTxt: 'https://taste-budz.netlify.app/',
     color: 'purple',
@@ -70,7 +70,7 @@ const projectsData = [
   {
     id: 2,
     title: 'CPA - i',
-    cartoonImage: "https://res.cloudinary.com/dwkg9jctn/image/upload/v1708624715/my-portfolio/cpai_xqxpn3.png",
+    cartoonImage: "https://res.cloudinary.com/dwkg9jctn/image/upload/v1708627022/Portfolio/cpai_xqxpn3_c_pad_w_400_qzclz3.png",
     realImage: "https://res.cloudinary.com/dwkg9jctn/image/upload/v1708624732/my-portfolio/cpai-real_cucgdh.png",
     linkTxt: 'https://cpa-i.up.railway.app/',
     color: 'mint',
@@ -82,7 +82,7 @@ const projectsData = [
   {
     id: 3,
     title: 'Good Dimes',
-    cartoonImage: "https://res.cloudinary.com/dwkg9jctn/image/upload/v1708624726/my-portfolio/good-dimes_fmi8na.png",
+    cartoonImage: "https://res.cloudinary.com/dwkg9jctn/image/upload/v1708627026/Portfolio/good-dimes_fmi8na_c_pad_w_400_gtjarg.png",
     realImage: "https://res.cloudinary.com/dwkg9jctn/image/upload/v1708624739/my-portfolio/good-dimes-real_of7ahc.png",
     linkTxt: 'https://gooddimes.cyclic.cloud/',
     color: 'blue',

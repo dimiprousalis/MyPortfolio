@@ -47,7 +47,7 @@ const ContactForm = () => {
                 <div className="disk"></div>
             </div>
             <div className="keyboard">
-                <img className="comp-pic" src="https://res.cloudinary.com/dwkg9jctn/image/upload/v1708624662/my-portfolio/keyboard_ltmi57.png" alt="comp" />
+                <img className="comp-pic" src="https://res.cloudinary.com/dwkg9jctn/image/upload/v1708627025/Portfolio/keyboard_ltmi57_c_pad_w_650_azdilt.png" alt="comp" />
             </div>
         </>
     )
