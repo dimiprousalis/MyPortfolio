@@ -58,8 +58,8 @@ const projectsData = [
   {
     id: 1,
     title: 'Taste Buds',
-    cartoonImage: require('../../assets/projects/taste-buds.png'),
-    realImage: require('../../assets/projects/taste-buds-real.png'),
+    cartoonImage: "https://res.cloudinary.com/dwkg9jctn/image/upload/v1708624744/my-portfolio/taste-buds_l8sfre.png",
+    realImage: "https://res.cloudinary.com/dwkg9jctn/image/upload/v1708624749/my-portfolio/taste-buds-real_ivetma.png",
     linkTxt: 'https://taste-budz.netlify.app/',
     color: 'purple',
     description: 'A full stack web application that lets you save recipes',
@@ -70,8 +70,8 @@ const projectsData = [
   {
     id: 2,
     title: 'CPA - i',
-    cartoonImage: require('../../assets/projects/cpai.png'),
-    realImage: require('../../assets/projects/cpai-real.png'),
+    cartoonImage: "https://res.cloudinary.com/dwkg9jctn/image/upload/v1708624715/my-portfolio/cpai_xqxpn3.png",
+    realImage: "https://res.cloudinary.com/dwkg9jctn/image/upload/v1708624732/my-portfolio/cpai-real_cucgdh.png",
     linkTxt: 'https://cpa-i.up.railway.app/',
     color: 'mint',
     description: 'AI Chatbot that answers any of your accounting questions',
@@ -82,8 +82,8 @@ const projectsData = [
   {
     id: 3,
     title: 'Good Dimes',
-    cartoonImage: require('../../assets/projects/good-dimes.png'),
-    realImage: require('../../assets/projects/good-dimes-real.png'),
+    cartoonImage: "https://res.cloudinary.com/dwkg9jctn/image/upload/v1708624726/my-portfolio/good-dimes_fmi8na.png",
+    realImage: "https://res.cloudinary.com/dwkg9jctn/image/upload/v1708624739/my-portfolio/good-dimes-real_of7ahc.png",
     linkTxt: 'https://gooddimes.cyclic.cloud/',
     color: 'blue',
     description: 'A fullstack web application to help you keep track of who owes you money',

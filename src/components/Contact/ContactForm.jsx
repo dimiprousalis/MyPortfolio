@@ -47,7 +47,7 @@ const ContactForm = () => {
                 <div className="disk"></div>
             </div>
             <div className="keyboard">
-                <img className="comp-pic" src={require('../../assets/keyboard.png')} alt="comp" />
+                <img className="comp-pic" src="https://res.cloudinary.com/dwkg9jctn/image/upload/v1708624662/my-portfolio/keyboard_ltmi57.png" alt="comp" />
             </div>
         </>
     )

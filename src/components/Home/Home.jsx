@@ -11,7 +11,7 @@ const Home = () => {
                     <h1>Hi, I'm Dimi...</h1>
                     <AnimatedText />
                 </div>
-                <img className="home-pic" src={require('../../assets/cartoondimi-6.png')} alt="dimi" />
+                <img className="home-pic" src="https://res.cloudinary.com/dwkg9jctn/image/upload/v1708624372/my-portfolio/cartoondimi-6_lac2rd.png" alt="dimi" />
             </section>
         </>
     )
