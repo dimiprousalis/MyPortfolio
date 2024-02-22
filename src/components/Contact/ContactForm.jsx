@@ -33,9 +33,12 @@ const ContactForm = () => {
                 <form
                     ref={formRef}
                     onSubmit={sendEmail}>
-                    <input type="text" required placeholder="Name" name="name" />
-                    <input type="email" required placeholder="Email" name="email" />
-                    <textarea rows={9} placeholder="Message" name="message" />
+                    <label for="name">Name:</label>
+                    <input type="text" required placeholder="Name" id="name" name="name" />
+                    <label for="email">Email:</label>
+                    <input type="email" required placeholder="Email" id="email" name="email" />
+                    <label for="message">Message:</label>
+                    <textarea rows={9} placeholder="Message" id="message" name="message" />
                     <button>Send</button>
                     {error && alert("Sorry, looks like that didn't work. Let's try again!")}
                     {success && alert("Thank you! I'll be reaching out shortly.")}

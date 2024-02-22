@@ -18,7 +18,7 @@ const Website = (props) => {
 
             </div>
             <div className={`box-3 ${props.color}`}>
-                <img className="website-pic" src={props.cartoonImage} alt="taste buds" />
+                <img className="website-pic" src={props.cartoonImage} alt={props.color} />
             </div>
         </div>
     )

@@ -33,9 +33,9 @@ function Navbar() {
         <div className="nav-container">
             <div className="logo">
                <span> Dimi</span>
-                <a href="https://www.linkedin.com/in/dimitraprousalis/"><LinkedInIcon sx={{ fontSize: 40 }} />
+                <a href="https://www.linkedin.com/in/dimitraprousalis/" aria-label="LinkedIn"><LinkedInIcon sx={{ fontSize: 40 }} />
                 </a>
-                <a href="https://github.com/dimiprousalis"><GitHubIcon sx={{ fontSize: 40 }} />
+                <a href="https://github.com/dimiprousalis" aria-label="GitHub"><GitHubIcon sx={{ fontSize: 40 }} />
                 </a>
 
             </div>

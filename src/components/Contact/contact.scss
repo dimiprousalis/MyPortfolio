@@ -54,6 +54,12 @@ form {
     gap: 2%;
     padding: 3% 2%;
 
+    label {
+        visibility: hidden;
+        height: 0;
+        
+    }
+
     @include mobile {
         gap: 3%;
         padding: 3%;
